@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Fundamentals</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
@@ -14,24 +15,18 @@
 
                 <thead>
                     <tr>
-                        <th></th>
-                        <th scope="col">Tag Name:</th>  
-                        <th scope="col">Default DisplayType:</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Tag Name</th>  
+                        <th scope="col">Default DisplayType</th>
                         <th scope="col">Self-ClosingTag</th>
                         <th scope="col">Brief Description</th>
                     </tr>
                 </thead>
 
                 <tbody>
+                    <!-- Style and Semantic tags	 -->
                     <tr>
-                        <th rowspan="9">Style and Semantic tags</th>
-                        <td>&lt;header&gt;</td>
-                        <td>Block</td>
-                        <td>No</td>
-                        <td>Hyperlink to same or other pages</td>
-                    </tr>
-
-                    <tr>
+                        <th rowspan="8" scope="row">Style and Semantic Tags</th>
                         <td>&lt;header&gt;</td>
                         <td>Block</td>
                         <td>No</td>
@@ -49,7 +44,7 @@
                         <td>&lt;footer&gt;</td>
                         <td>Block</td>
                         <td>No</td>
-                        <td>Specifies the main content of a document</td>
+                        <td>Defines a footer for a document or section</td>
                     </tr>
 
                     <tr>
@@ -63,15 +58,14 @@
                         <td>&lt;div&gt;</td>
                         <td>block</td>
                         <td>No</td>
-                        <td>Defines a section in a document</td>
+                        <td>Defines a division or section in a document</td>
                     </tr>
 
                     <tr>
                         <td>&lt;span&gt;</td>
                         <td>Inline</td>
                         <td>No</td>
-                        <td>Defines a section in a document</td>
-                     
+                        <td>Used to mark up a part of a text, or a part of a document</td>
                     </tr>
 
                     <tr>
@@ -79,7 +73,6 @@
                         <td>Block</td>
                         <td>No</td>
                         <td>Defines a search section</td>
-                       
                     </tr>
 
                     <tr>
@@ -91,11 +84,11 @@
 
                     <!--Formatic tags-->
                     <tr>
-                        <th rowspan="10">Formatic Tags</th>
-                        <td>&lt;adress&gt;</td>
+                        <th rowspan="10" scope="row">Formatic Tags</th>
+                        <td>&lt;address&gt;</td>
                         <td>Block</td>
                         <td>No</td>
-                        <td>Defines an article</td>
+                        <td>Defines an address</td>
                     </tr>
 
                     <tr>
@@ -109,7 +102,7 @@
                         <td>&lt;code&gt;</td>
                         <td>Inline</td>
                         <td>No</td>
-                        <td>Defines bold text</td>
+                        <td>Defines code block</td>
                     </tr>
 
                     <tr>
@@ -163,7 +156,7 @@
 
                     <!--Forms and inputs-->
                     <tr>
-                        <th rowspan="9">Forms and Inputs</th>
+                        <th rowspan="9" scope="row">Forms and Inputs</th>
                         <td>&lt;form&gt;</td>
                         <td>Block</td>
                         <td>No</td>
@@ -227,9 +220,8 @@
                     </tr>
 
                     <!--images-->
-
                     <tr>
-                        <th rowspan="3">Images</th>
+                        <th rowspan="3" scope="row">Images</th>
                         <td>&lt;img&gt;</td>
                         <td>Inline</td>
                         <td>Yes</td>
@@ -250,9 +242,9 @@
                         <td>Specifies self-contained content</td>
                     </tr>
 
-                        <!--audio/video-->
+                    <!--audio/video-->
                     <tr>
-                        <th rowspan="2">Audio/Links</th>
+                        <th rowspan="2" scope="row">Audio/Links</th>
                         <td>&lt;audio&gt;</td>
                         <td>Block</td>
                         <td>No</td>
@@ -268,7 +260,7 @@
 
                     <!--links-->
                     <tr>
-                    <th rowspan="3">Links</th>
+                    <th rowspan="3" scope="row">Links</th>
                         <td>&lt;a&gt;</td>
                         <td>Inline</td>
                         <td>No</td>
@@ -289,131 +281,104 @@
                         <td>Defines navigation links</td>
                     </tr>
 
-                  <!--Lists-->
-                  <tr>
-                    <th rowspan="6">Lists</th>
-                    <td>&lt;ul&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines an unordered list</td>
-                </tr>
+                    <!--Lists-->
+                    <tr>
+                        <th rowspan="6" scope="row">Lists</th>
+                        <td>&lt;ul&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines an unordered list</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;ol&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines an ordered list</td>
-                </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines an ordered list</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;li&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a list item</td>
-                </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a list item</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;dl&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a description list</td>
-                </tr>
+                    <tr>
+                        <td>&lt;dl&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a description list</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;dt&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a term/name in a description list</td>
-                </tr>
+                    <tr>
+                        <td>&lt;dt&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a term/name in a description list</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;dd&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a description of a term/name in a description list</td>
-                </tr>
+                    <tr>
+                        <td>&lt;dd&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a description of a term/name in a description list</td>
+                    </tr>
 
-                <!--Tables-->
-                <tr>
-                    <th rowspan="8">Table</th>
-                    <td>&lt;table&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a table</td>
-                </th>
+                    <!--Tables-->
+                    <tr>
+                        <th rowspan="8" scope="row">Table</th>
+                        <td>&lt;table&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a table</td>
+                    </th>
 
-                <tr>
-                    <td>&lt;caption&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a table caption</td>
-                </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a table caption</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;th&gt;</td>
-                    <td>Inline</td>
-                    <td>No</td>
-                    <td>Defines a header cell in a table</td>
-                </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Inline</td>
+                        <td>No</td>
+                        <td>Defines a header cell in a table</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;tr&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a row in a table</td>
-                </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a row in a table</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;td&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Defines a cell in a table</td>
-                </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Defines a cell in a table</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;thead&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Groups the body content in a table</td>
-                </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Groups the body content in a table</td>
+                    </tr>
 
-                <tr>
-                    <td>&lt;tfoot&gt;</td>
-                    <td>Block</td>
-                    <td>No</td>
-                    <td>Groups the footer content in a table</td>
-                </tr>
-
-                  
-
-
-
-
-
-
-
-
-
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Block</td>
+                        <td>No</td>
+                        <td>Groups the footer content in a table</td>
+                    </tr>
                 </tbody>
             </table>
         </main>
-       
-        
-
-
-      
-        
-
-
-
-
-
-        
-            
-
-        
     </body>
-
 </html>
 
 
