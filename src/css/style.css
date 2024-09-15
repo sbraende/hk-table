@@ -1,3 +1,68 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+:root{
+    --borderradius: 8px;
+    --color-primary-dark: rgb(24, 35, 47);
+}
+
 *{
-    background-color: green;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background: #c0392b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.table caption{
+    font-size: 3rem;
+    padding: 2rem 0 1.5rem 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.table{
+    margin: 0 1rem 4rem 1rem;
+    font-family: "Roboto", sans-serif;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: var(--borderradius);
+}
+
+.table__header-row > th{
+    padding: 1rem;
+    text-align: left;
+    color: whitesmoke;
+    background-color: var(--color-primary-dark);
+}
+
+.table__header-row > th:first-child{
+    border-top-left-radius: var(--borderradius);
+}
+.table__header-row > th:last-child{
+    border-top-right-radius: var(--borderradius);
+}
+
+tbody > tr > * {
+    max-width: 400px;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    color: rgb(80, 80, 80);
+    box-shadow: 0px 0px 1px rgb(132, 132, 132);
+}
+
+.table__category-end{
+    border-bottom: 2px solid rgb(158, 158, 158);
 }
