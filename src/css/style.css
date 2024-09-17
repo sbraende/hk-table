@@ -22,15 +22,6 @@ main{
     background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
-.table caption{
-    font-size: 3rem;
-    padding: 2rem 0 1.5rem 0;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-    font-weight: 800;
-}
-
 .table{
     margin: 0 1rem 4rem 1rem;
     font-family: "Roboto", sans-serif;
@@ -41,21 +32,31 @@ main{
     border-radius: var(--borderradius);
 }
 
-.table__header-row > th{
+.table caption{
+    font-size: 3rem;
+    padding: 2rem 0 1.5rem 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.table__header-row th{
     padding: 1rem;
     text-align: left;
     color: whitesmoke;
     background-color: var(--color-primary-dark);
 }
 
-.table__header-row > th:first-child{
+.table__header-row th:first-child{
     border-top-left-radius: var(--borderradius);
 }
-.table__header-row > th:last-child{
+.table__header-row th:last-child{
     border-top-right-radius: var(--borderradius);
 }
 
-.table tbody > tr > * {
+/* tbody cells */
+.table tbody tr * {
     max-width: 400px;
     padding: 0.8rem 1rem;
     text-align: left;
@@ -63,10 +64,12 @@ main{
     box-shadow: 0px 0px 1px rgb(132, 132, 132);
 }
 
-.table__category-end{
-    border-bottom: 2px solid rgb(158, 158, 158);
+/* tbody cells hover effect */
+.table tbody tr:hover :not(th) {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.table tr:hover :not(th){
-    background-color: rgba(255, 255, 255, 0.5);
+/* Add lines between each category */
+.table__category-end{
+    border-bottom: 2px solid rgb(158, 158, 158);
 }
