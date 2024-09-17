@@ -5,7 +5,9 @@
 
 :root{
     --borderradius: 8px;
+    --color-primary-light: rgb(245, 245, 245);
     --color-primary-dark: rgb(24, 35, 47);
+    --color-secondary-gray: rgba(132, 132, 132, 0.5)
 }
 
 *{
@@ -15,18 +17,15 @@
 }
 
 main{
-    display: flex;
-    justify-content: center;
     background: #c0392b;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .table{
-    margin: 0 1rem 4rem 1rem;
+    margin: 0 auto;
     font-family: "Roboto", sans-serif;
     border-collapse: collapse;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     border-radius: var(--borderradius);
@@ -35,16 +34,20 @@ main{
 .table caption{
     font-size: 3rem;
     padding: 2rem 0 1.5rem 0;
-    color: white;
+    color: var(--color-primary-light);
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-weight: 800;
 }
 
+th{
+    font-weight: 700;
+}
+
 .table__header-row th{
     padding: 1rem;
     text-align: left;
-    color: whitesmoke;
+    color: var(--color-primary-light);
     background-color: var(--color-primary-dark);
 }
 
@@ -57,19 +60,26 @@ main{
 }
 
 /* tbody cells */
-.table tbody tr * {
+.table tbody tr > * {
     max-width: 400px;
-    padding: 0.8rem 1rem;
+    padding: 0.75rem 1rem;
     text-align: left;
     color: rgb(80, 80, 80);
-    border: 1px solid rgba(132, 132, 132, 0.5);
+    border: 1px solid var(--color-secondary-gray);
 }
 
 /* tbody cells hover effect */
 .table tbody tr:hover :not(th) {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .table__category-end{
-    border-bottom: 2px solid rgb(158, 158, 158);
+    border-bottom: 2px solid var(--color-secondary-gray);
 }
+
+/* Questions
+- Variables on padding? My paddings are quite different from each other. 
+- I'm getting white border around .header-row
+- 
+
+*/
