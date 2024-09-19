@@ -1,43 +1,57 @@
 @font-face {
     font-family: Roboto;
-    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto/Roboto-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
 }
 
 :root{
     --borderradius: 8px;
     --color-primary-light: rgb(245, 245, 245);
     --color-primary-dark: rgb(24, 35, 47);
-    --color-secondary-gray: rgba(132, 132, 132, 0.5)
+    --color-secondary-gray: rgba(132, 132, 132, 0.5);
+    --padding-standard: 1rem;
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 main{
-    background: #c0392b;  /* fallback for old browsers */
+    background: #c0392b;  
     background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    padding: var(--padding-standard);
 }
 
-.table{
+table{
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     border-radius: var(--borderradius);
 }
 
-.table caption{
+caption{
     font-size: 3rem;
-    padding: 2rem 0 1.5rem 0;
+    padding: 2rem 0 var(--padding-standard) 0;
     color: var(--color-primary-light);
-    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     font-style: italic;
-    font-weight: 800;
 }
 
 th{
@@ -45,41 +59,36 @@ th{
 }
 
 .table__header-row th{
-    padding: 1rem;
+    padding: var(--padding-standard);
     text-align: left;
     color: var(--color-primary-light);
     background-color: var(--color-primary-dark);
 }
 
-.table__header-row th:first-child{
+.table__header-left{
     border-top-left-radius: var(--borderradius);
 }
 
-.table__header-row th:last-child{
+.table__header-right{
     border-top-right-radius: var(--borderradius);
 }
 
-/* tbody cells */
-.table tbody tr > * {
+td, th {
     max-width: 400px;
     padding: 0.75rem 1rem;
     text-align: left;
     color: rgb(80, 80, 80);
-    border: 1px solid var(--color-secondary-gray);
-}
-
-/* tbody cells hover effect */
-.table tbody tr:hover :not(th) {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px var(--color-secondary-gray); /* Used for cell borders (avoids border bugs) */
 }
 
 .table__category-end{
     border-bottom: 2px solid var(--color-secondary-gray);
 }
 
-/* Questions
-- Variables on padding? My paddings are quite different from each other. 
-- I'm getting white border around .header-row
-- 
-
-*/
+.table__footer-left{
+    border-bottom-left-radius: var(--borderradius);
+}
+.table__footer-right{
+    border-bottom-right-radius: var(--borderradius);
+}

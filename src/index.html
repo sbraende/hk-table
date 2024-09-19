@@ -15,16 +15,16 @@
                 
                 <thead>
                     <tr class="table__header-row">
-                        <th scope="col">Category:</th>
+                        <th class="table__header-left" scope="col">Category:</th>
                         <th scope="col">Tag Name:</th>  
                         <th scope="col">Default DisplayType:</th>
                         <th scope="col">Self-ClosingTag:</th>
-                        <th scope="col">Brief Description:</th>
+                        <th class="table__header-right" scope="col">Brief Description:</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <!-- Style and Semantic tags	 -->
+                    <!-- Style and Semantic tags -->
                     <tr>
                         <th rowspan="8" scope="row">Style and Semantic Tags</th>
                         <td>&lt;header&gt;</td>
@@ -139,7 +139,7 @@
                     </tr>
 
                     <!--Forms and inputs-->
-                    <tr>
+                    <tr >
                         <th rowspan="9" scope="row">Forms and Inputs</th>
                         <td>&lt;form&gt;</td>
                         <td>Block</td>
@@ -233,7 +233,7 @@
 
                     <!--links-->
                     <tr>
-                    <th rowspan="3" scope="row">Links</th>
+                        <th rowspan="3" scope="row">Links</th>
                         <td>&lt;a&gt;</td>
                         <td>Inline</td>
                         <td>No</td>
@@ -293,7 +293,7 @@
 
                     <!--Tables-->
                     <tr>
-                        <th rowspan="7" scope="row">Table</th>
+                        <th class="table__footer-left" rowspan="7" scope="row">Table</th>
                         <td>&lt;table&gt;</td>
                         <td>Block</td>
                         <td>No</td>
@@ -329,20 +329,14 @@
                         <td>No</td>
                         <td>Groups the body content in a table</td>
                     </tr>
-                    <tr>
+                    <tr class="table__footer-row">
                         <td>&lt;tfoot&gt;</td>
                         <td>Block</td>
                         <td>No</td>
-                        <td>Groups the footer content in a table</td>
+                        <td class="table__footer-right">Groups the footer content in a table</td>
                     </tr>
                 </tbody>
             </table>
         </main>
     </body>
 </html>
-
-
-
-
-
-
