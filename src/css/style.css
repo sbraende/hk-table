@@ -89,6 +89,7 @@ td, th {
 .table__footer-left{
     border-bottom-left-radius: var(--borderradius);
 }
+
 .table__footer-right{
     border-bottom-right-radius: var(--borderradius);
 }
